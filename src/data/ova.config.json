@@ -1,0 +1,78 @@
+{
+  "_instrucciones": "Fuente única de los metadatos LOM-CO, los créditos y la licencia del OVA. scripts/build-manifest.mjs genera dist/imsmanifest.xml y dist/lom-metadata.xml a partir de este archivo, y la interfaz (Guía OVA y portada) lo lee directamente. Si agregas un valor entre [CORCHETES], el build lo reportará como pendiente.",
+  "identifier": {
+    "catalog": "URI",
+    "entry": "urn:prisma-lab:ova:1.0.0"
+  },
+  "title": "PRISMA-Lab: Objeto Virtual de Aprendizaje para la Guía PRISMA 2020",
+  "shortTitle": "PRISMA-Lab",
+  "language": "es",
+  "description": "Laboratorio interactivo y simulador algorítmico para el aprendizaje operativo del reporte de revisiones sistemáticas bajo PRISMA 2020: deslinde Registro/Informe/Estudio, búsqueda reproducible PRISMA-S, conciliación del diagrama de flujo, riesgo de sesgo, SWiM, GRADE y auditoría de los 42 sub-ítems.",
+  "keywords": [
+    "PRISMA 2020",
+    "Revisiones sistemáticas",
+    "Diagrama de flujo",
+    "PRISMA-S",
+    "GRADE",
+    "Ciencia abierta",
+    "Metodología de la investigación"
+  ],
+  "coverage": "Educación superior — Colombia",
+  "version": "1.0.0",
+  "status": "draft",
+  "statusLabel": "Prototipo en validación",
+  "creationDate": "2026-11-10",
+  "authors": [
+    {
+      "name": "Santiago Suárez Osorio",
+      "role": "author",
+      "roleLabel": "Autor — diseño instruccional y desarrollo"
+    }
+  ],
+  "institution": {
+    "name": "Institución Universitaria ITM"
+  },
+  "license": {
+    "name": "Creative Commons Atribución 4.0 Internacional (CC BY 4.0)",
+    "spdx": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/deed.es",
+    "holder": "Santiago Suárez Osorio",
+    "cost": "no"
+  },
+  "educational": {
+    "interactivityType": "active",
+    "learningResourceType": ["simulation", "exercise", "questionnaire", "self assessment", "narrative text"],
+    "learningResourceTypeLabel": "Simulador, ejercicio, cuestionario, autoevaluación y texto explicativo",
+    "interactivityLevel": "very high",
+    "semanticDensity": "high",
+    "intendedEndUserRole": "learner",
+    "context": "higher education",
+    "typicalAgeRange": "18-",
+    "difficulty": "medium",
+    "typicalLearningTime": "PT1H20M",
+    "typicalLearningTimeLabel": "~80 minutos",
+    "audience": "Estudiantes de pregrado y posgrado en ingeniería y ciencias de la salud, e investigadores que elaboran o evalúan revisiones sistemáticas.",
+    "description": "Ruta autónoma: diagnóstico (pre-test) → 4 módulos con simuladores → post-test con retroalimentación. La calificación reportada al LMS es el porcentaje de aciertos del post-test; se aprueba con 75 % o más."
+  },
+  "prerequisites": [
+    "Conocimientos básicos de metodología de la investigación (pregunta de investigación, tipos de estudio).",
+    "Lectura comprensiva de artículos científicos; parte de la terminología y las referencias están en inglés.",
+    "Nociones de búsqueda en bases de datos bibliográficas (Scopus, PubMed, IEEE Xplore u otras).",
+    "Aritmética básica (sumas y restas) para conciliar el diagrama de flujo.",
+    "Un navegador web actualizado (Chrome, Edge, Firefox o Safari). No requiere instalación ni conexión permanente a internet."
+  ],
+  "masteryScore": 75,
+  "accessibility": "Diseñado con el objetivo de cumplir WCAG 2.1 nivel AA (Resolución MinTIC 1519 de 2020) y NTC 5854: etiquetas en formularios, navegación por teclado, foco visible, modo de alto contraste y respeto de la preferencia de movimiento reducido. Pendiente de auditoría formal con usuarios y herramientas automáticas.",
+  "annotation": {
+    "entity": "Santiago Suárez Osorio",
+    "date": "2026-11-10",
+    "description": "Uso sugerido: actividad autónoma previa o complementaria a la sesión presencial sobre revisiones sistemáticas. El docente puede seleccionar el caso de estudio (ingeniería de software, ciencias de la salud o el reto de flujo roto) según el programa."
+  },
+  "classification": {
+    "source": "Clasificación de áreas del conocimiento — MEN / SNIES",
+    "taxonPath": [
+      { "id": "ING", "entry": "Ingeniería, arquitectura, urbanismo y afines" },
+      { "id": "ING-MET-INV", "entry": "Metodología de la investigación" }
+    ]
+  }
+}

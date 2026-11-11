@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #000;
+}
+
+.text-gradient-prism {
+  background: linear-gradient(90deg, #5ac8fa 0%, #5e5ce6 35%, #bf5af2 65%, #ff375f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Foco visible para navegación por teclado (WCAG 2.1 — 2.4.7). */
+:focus-visible {
+  outline: 3px solid #0071e3;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Enlace "Saltar al contenido" (WCAG 2.1 — 2.4.1). */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -100px;
+  z-index: 100;
+  background: #0071e3;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.skip-link:focus {
+  top: 12px;
+}
+
+/* Modo de alto contraste (NTC 5854 / WCAG 2.1 — 1.4.3 y 1.4.11). */
+.high-contrast-ntc5854 {
+  filter: contrast(1.25);
+}
+.high-contrast-ntc5854 .text-neutral-400,
+.high-contrast-ntc5854 .text-neutral-500,
+.high-contrast-ntc5854 .text-neutral-600 {
+  color: #1d1d1f !important;
+}
+.high-contrast-ntc5854 input,
+.high-contrast-ntc5854 textarea,
+.high-contrast-ntc5854 select {
+  border: 2px solid #1d1d1f !important;
+  background: #fff !important;
+}
+.high-contrast-ntc5854 a {
+  text-decoration: underline;
+}
+.high-contrast-ntc5854 :focus-visible {
+  outline: 4px solid #000;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

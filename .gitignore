@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.zip
+*.tsbuildinfo
+.claude/
+.DS_Store
+Thumbs.db

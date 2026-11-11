@@ -1,0 +1,10 @@
+services:
+  prisma-lab-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: prisma-lab-ova
+    ports:
+      - "8080:80"
+      - "3838:80"
+    restart: unless-stopped
